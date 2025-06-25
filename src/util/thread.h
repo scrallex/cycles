@@ -4,7 +4,7 @@
 
 #pragma once
 
-#include <condition_variable>
+#include "../condition_variable"
 #include <functional>
 #include <mutex>
 
@@ -15,14 +15,14 @@
 #endif
 
 #ifdef _WIN32
-#  include "util/windows.h"
+#  include "../util/windows.h"
 #endif
 
 /* NOTE: Use tbb/spin_mutex.h instead of util_tbb.h because some of the TBB
  * functionality requires RTTI, which is disabled for OSL kernel. */
 #include <tbb/spin_mutex.h>
 
-CCL_NAMESPACE_BEGIN
+CCL_NAMESPACE_BEGIN;
 
 using thread_mutex = std::mutex;
 using thread_scoped_lock = std::unique_lock<std::mutex>;
@@ -70,4 +70,4 @@ class thread_scoped_spin_lock {
   thread_spin_lock &lock_;
 };
 
-CCL_NAMESPACE_END
+CCL_NAMESPACE_END;

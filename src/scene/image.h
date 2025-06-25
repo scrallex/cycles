@@ -4,17 +4,17 @@
 
 #pragma once
 
-#include "device/memory.h"
+#include "../device/memory.h"
 
-#include "scene/colorspace.h"
+#include "../scene/colorspace.h"
 
-#include "util/string.h"
-#include "util/thread.h"
-#include "util/transform.h"
-#include "util/unique_ptr.h"
-#include "util/vector.h"
+#include "../util/string.h"
+#include "../util/thread.h"
+#include "../util/transform.h"
+#include "../util/unique_ptr.h"
+#include "../util/vector.h"
 
-CCL_NAMESPACE_BEGIN
+CCL_NAMESPACE_BEGIN;
 
 class Device;
 class DeviceInfo;

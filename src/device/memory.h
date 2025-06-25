@@ -8,11 +8,11 @@
  *
  * Data types for allocating, copying and freeing device memory. */
 
-#include "util/array.h"
-#include "util/half.h"
-#include "util/string.h"
-#include "util/texture.h"
-#include "util/types.h"
+#include "../util/array.h"
+#include "../util/half.h"
+#include "../util/string.h"
+#include "../util/texture.h"
+#include "../util/types.h"
 
 CCL_NAMESPACE_BEGIN
 
